@@ -6,23 +6,8 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
 main {
+    margin-top: 100px;
     padding: 20px;
 }
 
@@ -33,10 +18,72 @@ footer {
     padding: 10px 0;
 }
 
+/* Estilos para fijar el encabezado */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Estilos para el logo */
+header .logo {
+    float: right;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+/* Estilos para los botones de navegación */
+header nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header nav button:hover {
+    background-color: #555;
+}
+
 /* Estilos para secciones específicas */
 
 #novelas #cuentos, #matematicas, #fisica, #quimica, #preguntas, #contacto {
     margin-bottom: 30px;
+}
+
+/* Estilos para las imágenes dentro de los artículos con clase 'novelas' */
+article.novelas img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#novelas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article.novelas {
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Estilos para el formulario de contacto */
