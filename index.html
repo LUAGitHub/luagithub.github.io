@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Club de Libros</h1>
+        <nav>
+            <ul>
+                <li><a href="#novelas">Novelas</a></li>
+                <li><a href="#cuentos">Cuentos</a></li>
+                <li><a href="#matematicas">Matemáticas</a></li>
+                <li><a href="#fisica">Física</a></li>
+                <li><a href="#quimica">Química</a></li>
+                <li><a href="#preguntas">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Libros -->
+        <section id="novelas">
+            <h2>Novelas</h2>
+            <ul>
+                <li>Libro 1</li>
+                <li>Libro 2</li>
+                <li>Libro 3</li>
+            </ul>
+        </section>
+        <section id="cuentos">
+            <h2>Cuentos</h2>
+            <ul>
+                <li>Libro 1</li>
+                <li>Libro 2</li>
+                <li>Libro 3</li>
+            </ul>
+        </section>
+        <section id="matematicas">
+            <h2>Matemáticas</h2>
+            <ul>
+                <li>Libro 1</li>
+                <li>Libro 2</li>
+                <li>Libro 3</li>
+            </ul>
+        </section>
+        <section id="fisica">
+            <h2>Física</h2>
+            <ul>
+                <li>Libro 1</li>
+                <li>Libro 2</li>
+                <li>Libro 3</li>
+            </ul>
+        </section>
+        <section id="quimica">
+            <h2>Química</h2>
+            <ul>
+                <li>Libro 1</li>
+                <li>Libro 2</li>
+                <li>Libro 3</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes -->
+        <section id="preguntas">
+            <h2>Preguntas Frecuentes</h2>
+            <dl>
+                <dt>¿Cómo funciona el intercambio de libros?</dt>
+                <dd>Explicación del proceso básico para intercambiar libros con otros participantes.</dd>
+                <dt>¿Quién puede participar en el intercambio de libros?</dt>
+                <dd>Detalles sobre quiénes pueden unirse al intercambio, como si es abierto a la comunidad local o a un grupo específico.</dd>
+                <dt>¿Qué tipo de libros puedo intercambiar?</dt>
+                <dd>Información sobre el tipo de libros aceptados, como géneros específicos, condiciones de los libros, etc.</dd>
+            </dl>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para cualquier consulta, contáctanos:</p>
+            <form action="/enviar-mensaje" method="post">
+                <label for="nombre">Nombre:<input type="text" id="nombre" name="nombre" required></label><br><br>
+
+                <label for="email">Email:<input type="email" id="email" name="email" required></label><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Club de Libros. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

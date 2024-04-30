@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para secciones específicas */
+
+#novelas #cuentos, #matematicas, #fisica, #quimica, #preguntas, #contacto {
+    margin-bottom: 30px;
+}
+
+/* Estilos para el formulario de contacto */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para diseño responsive */
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Media Queries para dispositivos medianos */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 30px;
+    }
+}
+
+/* Media Queries para dispositivos grandes */
+@media (min-width: 1025px) {
+    header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 50px;
+    }
+}
