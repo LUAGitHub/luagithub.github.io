@@ -18,7 +18,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Estilos para fijar el encabezado */
+/* Fijar el encabezado */
 header {
     position: fixed;
     top: 0;
@@ -39,7 +39,7 @@ header .logo {
     margin-top: 10px;
 }
 
-/* Estilos para los botones de navegación */
+/* Botones de navegación */
 header nav {
     text-align: center;
     margin-top: 10px;
@@ -60,13 +60,13 @@ header nav button:hover {
     background-color: #555;
 }
 
-/* Estilos para secciones específicas */
+/* Secciones específicas */
 
 #novelas #cuentos, #matematicas, #fisica, #quimica, #preguntas, #contacto {
     margin-bottom: 30px;
 }
 
-/* Estilos para las imágenes dentro de los artículos con clase 'novelas' */
+/* Imágenes dentro de los artículos*/
 article.novelas img {
     width: 100px;
     height: 200px;
@@ -81,14 +81,21 @@ article.novelas img {
     justify-content: flex-start;
 }
 
-article.novelas {
-    width: 20%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+/* Textos dentro de los artículos*/
+.titulo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+.autor {
+    font-style: italic;
+    color: #666;
+}
+.ubicacion {
+    color: #999; 
 }
 
-/* Estilos para el formulario de contacto */
+/* Formulario de contacto */
 
 form {
     display: grid;
@@ -117,9 +124,9 @@ button {
     cursor: pointer;
 }
 
-/* Estilos para diseño responsive */
+/* Diseño responsive */
 
-/* Media Queries para dispositivos pequeños */
+/* Media Queries dispositivos pequeños */
 @media (max-width: 767px) {
     header {
         padding: 10px;
@@ -132,9 +139,15 @@ button {
     form {
         grid-template-columns: 1fr;
     }
+    article.novelas {
+        width: 50%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-/* Media Queries para dispositivos medianos */
+/* Media Queries dispositivos medianos */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
         padding: 15px;
@@ -143,9 +156,15 @@ button {
     main {
         padding: 30px;
     }
+    article.novelas {
+        width: 25%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-/* Media Queries para dispositivos grandes */
+/* Media Queries dispositivos grandes */
 @media (min-width: 1025px) {
     header {
         padding: 20px;
@@ -153,5 +172,11 @@ button {
 
     main {
         padding: 50px;
+    }
+    article.novelas {
+        width: 20%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
     }
 }
