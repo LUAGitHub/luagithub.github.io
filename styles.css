@@ -26,15 +26,17 @@ header {
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     z-index: 1000;
 }
 
 /* Estilos para el logo */
 header .logo {
-    float: right;
+    display: inline-flex;
+    float: left;
     margin-left: 10px;
-    margin-right: 50px;
+    margin-right: 5px;
+    margin-top: 10px;
 }
 
 /* Estilos para los botones de navegación */
@@ -76,11 +78,11 @@ article.novelas img {
 #novelas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 article.novelas {
-    width: 30%;
+    width: 20%;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
