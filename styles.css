@@ -83,7 +83,7 @@ article.novelas {
     width: 30%;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /* Estilos para el formulario de contacto */
