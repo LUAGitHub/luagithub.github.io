@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Libros</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <article class="logo"><img src="/img/LogoBlco.png" alt="Logo Club de Libros" width="50" height="50"></article>
+        <h1>Club de Libros</h1>
+        <nav>
+            <button href="#novelas">Novelas</button>
+            <button href="#cuentos">Cuentos</button>
+            <button href="#matematicas">Matemáticas</button>
+            <button href="#fisica">Física</button>
+            <button href="#quimica">Química</button>
+            <button href="#preguntas">FAQ</button>
+            <button href="/pages/contac.html">Contacto</button>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para cualquier consulta, contáctanos:</p>
+            <form action="/enviar-mensaje" method="post">
+                <label for="nombre">Nombre:<input type="text" id="nombre" name="nombre" required></label><br><br>
+
+                <label for="email">Email:<input type="email" id="email" name="email" required></label><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Club de Libros. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
